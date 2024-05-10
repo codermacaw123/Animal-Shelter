@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Oxford Animal Shelter</title>
+    <meta charset="utf-8" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="./lib/p5.gif.min.js"></script>
+    <script src="./lib/matter.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap" rel="stylesheet">
+
+    <!-- Firebase SDK CODE ADD BELOW -->
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+   
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyCAxjHiPUE18Zy4diz3d_Y01DruHX4wH54",
+        authDomain: "shelteranimals-1c33b.firebaseapp.com",
+        databaseURL: "https://shelteranimals-1c33b-default-rtdb.europe-west1.firebasedatabase.app",
+        projectId: "shelteranimals-1c33b",
+        storageBucket: "shelteranimals-1c33b.appspot.com",
+        messagingSenderId: "68356370713",
+        appId: "1:68356370713:web:8312f3f438284ee00b9588"
+      };
+
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  
+
+    <script src="Animal.js"> </script>
+    <script src="sketch.js"></script>
+  </head>
+
+  <body>
+   
+   <div>
+    <img id="intro" src="Assets/Screenshot 2024-05-02 at 12.57.09 PM.png" width="100%"/> 
+
+    
+
+    <p id="intro">
+      ##  Welcome to the Selfoss Animal Shelter!
+
+      Nestled in the heart of Selfoss, Iceland, our animal shelter is a haven for lost, abandoned, and surrendered pets. Here, we strive to provide a safe, loving, and temporary home for all animals who come through our doors. Our dedicated staff and volunteers work tirelessly to ensure each animal receives the care and attention they deserve until they find their forever families. 
+    
+    
+    </p>      
+    
+    <h2>Our Location:</h2>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28956.217239666443!2d-21.058572372446868!3d63.933655533412114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48d65fcb879909cb%3A0x5c9977c988b43f11!2sSelfoss%2C%20Iceland!5e0!3m2!1sen!2sca!4v1715013398553!5m2!1sen!2sca" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <button class="button" onclick="openPet()" value="adopt">Adopt</button>
+    <button class="button" onclick="openVolunteer()" value="volunteer">Volunteer</button>
+    <button class="button" onclick="openDonation()" value="donate">Donate</button>
+    
+    <p>
+      **A Second Chance at Happiness**
+      
+      Whether it's a playful puppy full of energy or a senior cat seeking a calm environment, we welcome animals of all ages, breeds, and backgrounds. Our team assesses each animal's individual needs, providing them with veterinary care, nutritious food, and plenty of love and playtime. We also take the time to understand each animal's personality to ensure a perfect match when adopting them out.
+    </p> 
+     <p>  
+      **More Than Just a Shelter**
+      
+      The Selfoss Animal Shelter is a vibrant community hub for animal lovers. We offer a variety of programs and services to promote responsible pet ownership and animal welfare. These include:
+      
+      * **Adoption Counseling:** Our adoption counselors provide guidance and support to potential adopters to ensure they find the perfect furry friend for their lifestyle. 
+      * **Educational Programs:** We host workshops and events to educate the public about animal care, responsible pet ownership, and the importance of spaying and neutering. 
+      * **Volunteer Opportunities:**  We rely on the compassion and dedication of volunteers to help us care for the animals, walk dogs, socialize cats, and assist with administrative tasks.
+    </p>   
+    <p>
+    **Finding Furever Families**
+      
+      Our ultimate goal is to find loving forever homes for all the animals in our care. We take pride in our successful adoption rate, knowing that each placement represents a happy ending for both the pet and the adopter. 
+    </p>   
+    <p>  
+    **How You Can Help**
+      
+      There are many ways you can contribute to the Selfoss Animal Shelter's mission of helping animals in need. Here are a few ideas:
+      
+      * **Adopt a Pet:**  Give a deserving animal a loving home. 
+      * **Donate:**  Your financial contributions allow us to provide food, medical care, and shelter for the animals.  Donations of gently used toys, bedding, and leashes are also greatly appreciated.
+      * **Volunteer:**  Become part of our animal-loving family by volunteering your time and skills.
+      * **Spread the Word:**  Tell your friends and family about our shelter and the wonderful animals waiting for their forever homes. 
+    </p>  
+    <p>
+      By working together, we can create a more compassionate community for animals in Selfoss. We invite you to visit our shelter, learn more about our work, and perhaps even find a furry friend to join your family. 
+      
+      Together, we can make a difference!
+       
+      </p>
+  </div>
+    
+
+
+  
+  <br>
+    
+    
+
+
+  </body>
+</html>

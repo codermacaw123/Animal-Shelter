@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Oxford Animal Shelter</title>
+    <meta charset="utf-8" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="./lib/p5.gif.min.js"></script>
+    <script src="./lib/matter.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap" rel="stylesheet">
+
+     <!-- Firebase SDK CODE ADD BELOW -->
+     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+    
+     <script>
+       const firebaseConfig = {
+         apiKey: "AIzaSyCAxjHiPUE18Zy4diz3d_Y01DruHX4wH54",
+         authDomain: "shelteranimals-1c33b.firebaseapp.com",
+         databaseURL: "https://shelteranimals-1c33b-default-rtdb.europe-west1.firebasedatabase.app",
+         projectId: "shelteranimals-1c33b",
+         storageBucket: "shelteranimals-1c33b.appspot.com",
+         messagingSenderId: "68356370713",
+         appId: "1:68356370713:web:8312f3f438284ee00b9588"
+       };
+ 
+     firebase.initializeApp(firebaseConfig);
+   </script>
+
+    <script src="Animal.js"> </script>
+  </head>
+
+  <body>
+    <script src="sketch.js"></script>
+    <h1>Oxford Animal Shelter</h1>
+    <h2> Surrendering your Pet</h2>
+   
+    <p>
+      It's never easy to say goodbye to a pet. They become part of the family, and letting them go can be heartbreaking. But sometimes, even though it's hard, it can be the best choice for both of you. 
+
+Here are some things to consider:
+
+*  **Why you're thinking of surrendering your pet:**  Is it a temporary issue, or something more long-term?  Are there resources available to help you keep your pet? 
+* **Your pet's needs:** Can you provide your pet with everything they need to be happy and healthy?  This includes things like food, shelter, exercise, vet care, and love. 
+* **Finding your pet a new home:**  There are many reputable shelters and rescue organizations that can help find your pet a loving new home. 
+
+If you decide that surrendering your pet is the right thing to do, it's important to find them a good place to go. Talk to your local animal shelter or rescue organization.  They can answer your questions and help you through the process. 
+
+Here are some things to remember:
+
+ * It's okay to feel sad or guilty. It's a big decision.
+ * Focus on finding your pet a loving new home.  That can help you feel good about your decision.
+ *  There are people who would love to give your pet a great life. 
+    </p>
+
+    <h2 class="header" >Please fill the details to surrender your pet </h2>
+    
+
+    
+   
+    
+    <h4>What is the species of your pet? </h4>
+    <input class="input" placeholder="Type species..." id="surrender_species"/> 
+    <br>
+    <h4>What is the breed of your pet? </h4>
+    <input  class="input" placeholder="Type breed..." id ="surrender_breed" />
+
+    <h4>What is the name of your pet? </h4>
+    <input class="input" placeholder="Type name..." id ="surrender_name" />
+
+    <h4>How much attention does your pet need? </h4>
+    <input class="input" placeholder="Type attention out of ten..." id ="surrender_attention" />
+    
+    <h4>How flooffy is your pet? </h4>
+    <input class="input" placeholder="Type flooffiness out of ten..." id ="surrender_floofiness" />
+    
+    <h4>How old is your pet? </h4>
+    <input class="input" placeholder="Type age..." id ="surrender_age" />
+    
+    <h4>What is your emergency contact? </h4>
+    <input class="input" placeholder="Type your phone number..." id ="surrender_number" />
+    
+    <h4>Does your pet have any allergies?</h4>
+    <input class="input" placeholder="Type your pets allergies..." id ="surrender_allergies" />
+
+    
+    <h4>What is the purpose of surrendering your pet?</h4>
+    <input class="input" placeholder="type in purpose of surrendering your pet" id ="surrender_purpose" />
+   
+    <!-- <h4>What is your pets photo?</h4>
+    
+    <form action="photos.html">
+      <input type="file" id="myFile" name="filename">
+    
+    </form>
+ -->
+
+   
+    
+    
+    
+   
+    <button id="button" onclick=submit()>Submit</button>
+    
+    <br>
+    <button onclick="backbutton()">Back</button>
+    <br>
+
+
+
+
+    
+
+
+  </body>
+</html>

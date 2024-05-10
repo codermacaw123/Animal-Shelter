@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Oxford Animal Shelter</title>
+    <meta charset="utf-8" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+    <script src="./lib/p5.gif.min.js"></script>
+    <script src="./lib/matter.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&display=swap" rel="stylesheet">
+
+     <!-- Firebase SDK CODE ADD BELOW -->
+     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+    
+     <script>
+       const firebaseConfig = {
+         apiKey: "AIzaSyCAxjHiPUE18Zy4diz3d_Y01DruHX4wH54",
+         authDomain: "shelteranimals-1c33b.firebaseapp.com",
+         databaseURL: "https://shelteranimals-1c33b-default-rtdb.europe-west1.firebasedatabase.app",
+         projectId: "shelteranimals-1c33b",
+         storageBucket: "shelteranimals-1c33b.appspot.com",
+         messagingSenderId: "68356370713",
+         appId: "1:68356370713:web:8312f3f438284ee00b9588"
+       };
+ 
+     firebase.initializeApp(firebaseConfig);
+   </script>
+
+    <script src="Animal.js"> </script>
+    <script src="sketch.js"></script>
+  </head>
+
+  <body>
+    <script src="sketch.js"></script>
+    <h1>Oxford Animal Shelter</h1>
+   
+    <p>
+      The Oxford Animal Shelter cares for lost and homeless pets. They provide a safe space for these adorable animals until they find their perfect match - a loving forever home!
+
+      You can visit to meet the cuddly critters.
+    </p>
+         
+    <h4>What is your age? </h4>
+    <input class="input" placeholder="Type age..." id="adopt_age"/> 
+    <br>
+    <h4>What is your name? </h4>
+    <input  class="input" placeholder="Type name..." id ="adopt_name" />
+
+    <h4>Do you have any allergies? </h4>
+    <input class="input" placeholder="Type allergies..." id ="adopt_allergy" />
+
+    <h4>WHat is your contact? </h4>
+    <input class="input" placeholder="Type contact..." id ="adopt_contact" />
+    
+    <h4>What sort of pet are you looking for?</h4>
+    <input class="input" placeholder="Type pet..." id ="adopt_pet" />
+    
+    <h4>How many pets are you looking to adopt?</h4>
+    <input class="input" placeholder="Type how many pets you want..." id ="adopt_howmany" />
+    
+    <h4>How large is your house?</h4>
+    <input class="input" placeholder="Type size of house..." id ="adopt_house" />
+
+    <h4>How much excersise are you doing daily?</h4>
+    <input class="input" placeholder="Type level of excersise out of ten..." id ="adopt_excersise" />
+    
+    <h4>Do you have any children under the age of 10 at home</h4>
+    <input class="input" placeholder="Type how many children you have..." id ="adopt_children" />
+    
+    <h4>How many hours are you going to leave your pet alone?</h4>
+    <input class="input" placeholder="Type how many hours are you going to leave your pet alone" id ="adopt_hours" />
+    
+
+    <button onclick="adopt()">Submit</button>
+    
+        <br>
+    <button onclick="backbutton()">Back</button>
+         <br>
+
+
+  </body>
+</html>
