@@ -108,6 +108,7 @@ function submit(){
     document.getElementById("surrender_number").value;
     document.getElementById("surrender_allergies").value ;
     document.getElementById("surrender_purpose").value ; 
+  alert("Thanks for submitting your data!")
 
     
 }
@@ -139,6 +140,8 @@ function volunteer(){
     document.getElementById("volunteer_name").value = "";
     document.getElementById("volunteer_skills").value= "";
     document.getElementById("volunteer_purpose").value = "";
+
+ alert("Thanks for submitting your data!")
 
 }
 
@@ -185,6 +188,8 @@ function adopt(){
     document.getElementById("adopt_howmany").value = "";
     document.getElementById("adopt_children").value = "";
     document.getElementById("adopt_excersise").value = "";
+
+  alert("Thanks for submitting your data!")
      
 
 }
