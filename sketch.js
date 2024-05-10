@@ -99,16 +99,17 @@ function submit(){
 
     })
 
-     document.getElementById("surrender_species").value ;
-   document.getElementById("surrender_breed").value;
-   document.getElementById("surrender_name").value;
-    document.getElementById("surrender_attention").value ;
-    document.getElementById("surrender_floofiness").value;
-    document.getElementById("surrender_age").value ;
-    document.getElementById("surrender_number").value;
-    document.getElementById("surrender_allergies").value ;
-    document.getElementById("surrender_purpose").value ; 
-  alert("Thanks for submitting your data!")
+     document.getElementById("surrender_species").value = "";
+   document.getElementById("surrender_breed").value = "";
+   document.getElementById("surrender_name").value = "";
+    document.getElementById("surrender_attention").value = "";
+    document.getElementById("surrender_floofiness").value= "";
+    document.getElementById("surrender_age").value = "";
+    document.getElementById("surrender_number").value = "";
+    document.getElementById("surrender_allergies").value = "";
+    document.getElementById("surrender_purpose").value = ""; 
+  
+ alert("Thanks for submitting your data!")
 
     
 }
