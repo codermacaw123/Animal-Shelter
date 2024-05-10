@@ -99,6 +99,16 @@ function submit(){
 
     })
 
+     document.getElementById("surrender_species").value ;
+   document.getElementById("surrender_breed").value;
+   document.getElementById("surrender_name").value;
+    document.getElementById("surrender_attention").value ;
+    document.getElementById("surrender_floofiness").value;
+    document.getElementById("surrender_age").value ;
+    document.getElementById("surrender_number").value;
+    document.getElementById("surrender_allergies").value ;
+    document.getElementById("surrender_purpose").value ; 
+
     
 }
 function volunteer(){
@@ -122,7 +132,13 @@ function volunteer(){
 
 
     })
-
+   
+    document.getElementById("volunteer_age").value = "";
+    document.getElementById("volunteer_allergies").value= "";
+    document.getElementById("volunteer_contact").value= "";
+    document.getElementById("volunteer_name").value = "";
+    document.getElementById("volunteer_skills").value= "";
+    document.getElementById("volunteer_purpose").value = "";
 
 }
 
@@ -139,6 +155,7 @@ function adopt(){
     adopt_howmany= document.getElementById("adopt_howmany").value ;
     adopt_children = document.getElementById("adopt_children").value;
     adopt_excersise= document.getElementById("adopt_excersise").value ;
+    
 
     var dataPet = "prospect/" + adopt_name
     database.ref(dataPet).set({
@@ -155,6 +172,20 @@ function adopt(){
 
     })
 
+
+ // making text box empty
+
+    document.getElementById("adopt_age").value = "";
+    document.getElementById("adopt_allergy").value= "";
+    document.getElementById("adopt_contact").value= "";
+     document.getElementById("adopt_name").value = "";
+     document.getElementById("adopt_house").value= "";
+    document.getElementById("adopt_hours").value = "";
+    document.getElementById("adopt_pet").value = "";
+    document.getElementById("adopt_howmany").value = "";
+    document.getElementById("adopt_children").value = "";
+    document.getElementById("adopt_excersise").value = "";
+     
 
 }
 
