@@ -79,7 +79,7 @@ function surrender(){
 function backbutton(){
     window.location.replace("index.html")    
 }
-function specialist(){
+function openSpecialist(){
 
     window.location.replace("specialist.html')
 
