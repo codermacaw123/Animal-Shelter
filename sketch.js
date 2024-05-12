@@ -36,6 +36,14 @@ var adopt_contact=""
 var adopt_howmany=""
 var adopt_allergy = "";
 
+var specialist_job = "";
+var specialist_name = ""; 
+var specialist_contact= ""; 
+var specialist_email = ""; 
+var specialist_certification = ""; 
+var specialist_age = "";
+
+
 var petDetails = []
 
 
@@ -71,6 +79,13 @@ function surrender(){
 function backbutton(){
     window.location.replace("index.html")    
 }
+function specialist(){
+
+    window.location.replace("specialist.html')
+
+ 
+}
+
 
 
 function submit(){
