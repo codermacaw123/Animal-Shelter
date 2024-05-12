@@ -219,4 +219,60 @@ function getting (){
     
 
 }
+function specialist(){
+
+
+    specialist_ = document.getElementById("specialist_job").value ;
+    specialist_ = document.getElementById("specialist_name").value ;
+    specialist_ = document.getElementById("specialist_contact").value ;
+    specialist_email = document.getElementById("specialist_email").value ;
+    specialist_certifications = document.getElementById("specialist_certifications").value ;
+    specialist_age = document.getElementById("specialist_age").value ;
+   
+    
+
+    var dataPet = "prospect/" + adopt_name
+    database.ref(dataPet).set({
+        name:adopt_name,
+        age:adopt_age,
+        contact:adopt_contact,
+        allergies:adopt_allergy,
+        house:adopt_house,
+        hours:adopt_hours,
+        species:adopt_pet,
+        quantity:adopt_howmany,
+        children:adopt_childeren,
+        excersise:adopt_excersise,
+
+    })
+
+
+ // making text box empty
+
+    document.getElementById("adopt_age").value = "";
+    document.getElementById("adopt_allergy").value= "";
+    document.getElementById("adopt_contact").value= "";
+     document.getElementById("adopt_name").value = "";
+     document.getElementById("adopt_house").value= "";
+    document.getElementById("adopt_hours").value = "";
+    document.getElementById("adopt_pet").value = "";
+    document.getElementById("adopt_howmany").value = "";
+    document.getElementById("adopt_children").value = "";
+    document.getElementById("adopt_excersise").value = "";
+
+  alert("Thanks for submitting your data!")
+     
+
+}
+
+
+function getting (){
+
+    database.ref("/").on("value" , data => {
+        petDetails = data.val()
+    })
+    
+
+}
+
 
