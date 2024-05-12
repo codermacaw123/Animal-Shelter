@@ -81,7 +81,7 @@ function backbutton(){
 }
 function openSpecialist(){
 
-    window.location.replace("specialist.html')
+    window.location.replace("specialist.html")
 
  
 }
