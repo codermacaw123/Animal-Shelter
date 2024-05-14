@@ -12,22 +12,34 @@ body{
 
  
   color:#B5E48C;
-  background-image: linear-gradient(#184E77, #52B69A);
+  background-image: linear-gradient(#03737A, #052F5F);
   font-size: larger;
   font-weight: bold;
-  
+ 
   
 }
 input{
 
- background-color: #184E77;
+ background-color: #052B56;
  color: #B5E48C;
  border-radius: 20%;
  width:500px;
  text-align: center;
  font-family: "Edu NSW ACT Foundation", cursive;
  font-weight: bold;
+ animation:pLoad 500ms;
+
  
+}
+h4{
+animation: pLoad 500ms ;
+
+
+}
+
+h2{
+animation:pLoad 500ms ;
+
 }
 
 button{
@@ -40,8 +52,19 @@ button{
   margin: 1%;
   align-items: center;
   justify-content: center;
+  animation: pLoad 500ms ;
+  height: 50px;
+  font-size: 30px;
 
- 
+
+}
+
+button:hover{
+  background-color: #052B56;
+  color:#03737A
+
+
+
 
 
 }
@@ -52,6 +75,37 @@ p{
   font-size: 20px;
   font-family: "Edu NSW ACT Foundation", cursive;
   font-weight: bold;
+  animation: pLoad 500ms;
+}
+@keyframes pLoad{
+
+  0%{
+    transform:translateY(-100%);
+    opacity:0;
+    rotate: 0deg;
+    transform: scale(-100%);
+  }
+
+  100%{
+    transfrom:translateY(0);
+    opacity:1;
+    rotate: 360deg;
+    transform: scale(100%);
+  }
+  
+    
 }
 
+img{
+animation: pLoad 500ms ;
+
+
+}
+
+iframe{
+animation:pLoad 500ms ;
+filter: grayscale(-200%);
+
+
+}
 

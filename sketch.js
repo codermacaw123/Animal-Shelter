@@ -1,10 +1,6 @@
 
 
-var a1, a1Img;
-var a2, a2Img;
-var a3, a3Img;
-var a4, a4Img;
-var a5, a5Img;
+
 
 var database;
 var surrender_species=""
@@ -48,9 +44,7 @@ var petDetails = []
 
 
 
-function preload(){
- a1Img=loadImage("Assets/paws.jpeg")
-}
+
 
 
 function setup(){
@@ -211,14 +205,9 @@ function adopt(){
 }
 
 
-function getting (){
 
-    database.ref("/").on("value" , data => {
-        petDetails = data.val()
-    })
-    
 
-}
+
 function specialist(){
 
 
@@ -226,32 +215,33 @@ function specialist(){
     specialist_name = document.getElementById("specialist_name").value ;
     specialist_contact = document.getElementById("specialist_contact").value ;
     specialist_email = document.getElementById("specialist_email").value ;
-    specialist_certifications = document.getElementById("specialist_certifications").value ;
+    specialist_certification = document.getElementById("specialist_certification").value ;
     specialist_age = document.getElementById("specialist_age").value ;
    
     
 
-    var dataPet = "Specialist/" + specialist_name
+    var dataPet = "specialist/" + specialist_job
     database.ref(dataPet).set({
         name:specialist_name,
         age:specialist_age,
         contact:specialist_contact,
         job:specialist_job,
-        certifications:specialist_certifications,
-        age:specialist_age
+        certification:specialist_certification,
+        age:specialist_age,
      
 
     })
 
 
- // making text box empty
+//  making text box empty
 
     document.getElementById("specialist_job").value ="";
     document.getElementById("specialist_name").value  ="";
     document.getElementById("specialist_contact").value  ="";
-    document.getElementById("specialist_email").value  ="";
-    document.getElementById("specialist_certifications").value  ="";
-    document.getElementById("specialist_age").value  ="";
+    document.getElementById("specialist_email").value  = "";
+    document.getElementById("specialist_certification").value  = "";
+    document.getElementById("specialist_age").value  = "";
+    console.log("hello")
    
     
   
